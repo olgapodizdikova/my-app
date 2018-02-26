@@ -1,0 +1,33 @@
+<div class="loginmodal-container">
+<table>
+  <form class="form-signin">
+  <tr>
+    <td>
+      LOGIN:
+    </td>
+    <td>
+      <input type="text" pInputText [(ngModel)]="newUser.login" class="form-control" required/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      PASSWORD:
+    </td>
+    <td>
+      <input type="password" pPassword [(ngModel)]="newUser.password" class="form-control" required/>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2>
+      <button class="btn btn-md btn-primary btn-block" (click)="login(newUser.login, newUser.password)">
+        LOG IN
+      </button>
+    </td>
+  </tr>
+  </form>
+</table>
+</div>
